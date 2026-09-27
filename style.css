@@ -972,9 +972,149 @@ ul {
     text-align: center;
   }
 }
+/* 
+  ---------------------------------------------------------------------------
+  10. MARQUEE TICKER BANNER STYLING
+  ---------------------------------------------------------------------------
+*/
+.marquee-section {
+  background-color: var(--text-charcoal);
+  color: var(--bg-cream);
+  padding: 0.75rem 0;
+  border-top: 2px solid var(--border-dark);
+  border-bottom: 2px solid var(--border-dark);
+  overflow: hidden;
+  white-space: nowrap;
+}
 
+.marquee-content {
+  display: inline-flex;
+  gap: 2rem;
+  animation: marquee 25s linear infinite;
+  font-family: var(--font-header);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+}
 
+.marquee-star {
+  color: var(--surface-stone);
+}
 
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
 
+/* 
+  ---------------------------------------------------------------------------
+  11. GARMENT SPECIFICATIONS / BRAND FEATURES STYLING
+  ---------------------------------------------------------------------------
+*/
+.features-section {
+  padding: 4rem 1.5rem;
+  background-color: var(--bg-cream);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background-color: var(--surface-stone);
+  border: 2px solid var(--border-dark);
+  box-shadow: var(--shadow-soft);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.feature-num {
+  font-family: var(--font-header);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  background-color: var(--bg-cream);
+  padding: 2px 8px;
+  border: 1px solid var(--border-dark);
+  width: fit-content;
+}
+
+.feature-title {
+  font-family: var(--font-header);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-charcoal);
+  letter-spacing: -0.5px;
+}
+
+.feature-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* 
+  ---------------------------------------------------------------------------
+  12. NEWSLETTER VIP TERMINAL STYLING
+  ---------------------------------------------------------------------------
+*/
+.newsletter-section {
+  padding: 4rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-container {
+  width: 100%;
+  max-width: 700px;
+}
+
+.newsletter-card {
+  background-color: var(--surface-stone);
+  border: 2px solid var(--border-dark);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.newsletter-body {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.newsletter-input {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
 

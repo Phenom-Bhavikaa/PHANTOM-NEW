@@ -4,47 +4,323 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>PHENOM | Y2K Streetwear</title>
+  <title>PHENOM | Y2K Streetwear Archive</title>
 
   <!-- Google Fonts import: 'Syne' for bold Y2K headers, 'Inter' for clean body text -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
-  <!-- <link rel="stylesheet">: Connects our HTML structure to our CSS stylesheet for colors & layouts -->
+  <!-- Connect stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!--NAVIGATION BAR-->
+  <!-- NAVIGATION BAR -->
   <header class="site-header">
     <nav class="navbar">
       
       <!-- Brand Logo / Badge -->
-      <a href="#home" class="brand-logo">
+      <a href="index.html" class="brand-logo">
         <span class="logo-symbol">✱</span> PHENOM <span class="logo-sub">[00]</span>
       </a>
 
       <!-- Navigation Links -->
       <ul class="nav-links">
-        <!-- <li> is a List Item inside an Unordered List <ul> -->
-        <li><a href="#home" class="nav-item">HOME</a></li>
-        <li><a href="#signin" class="nav-item">SIGN IN</a></li>
-        <li><a href="#shop" class="nav-item">SHOP</a></li>
-        <li><a href="#lookbook" class="nav-item">LOOKBOOK</a></li>
-        <li><a href="#contact" class="nav-item">CONTACT</a></li>
+        <li><a href="index.html" class="nav-item active">HOME</a></li>
+        <li><a href="signin.html" class="nav-item">SIGN IN</a></li>
+        <li><a href="shop.html" class="nav-item">SHOP</a></li>
+        <li><a href="lookbook.html" class="nav-item">LOOKBOOK</a></li>
+        <li><a href="contact.html" class="nav-item">CONTACT</a></li>
       </ul>
 
-      <!-- Right Side Action Badge (pure HTML visual cart badge) -->
+      <!-- Right Side Action Badge -->
       <div class="nav-actions">
-        <a href="#shop" class="cart-badge">MY CART</a>
+        <a href="shop.html" class="cart-badge">CART (0)</a>
       </div>
 
     </nav>
   </header>
 
-  <!-- Main container where future sections will be added step by step -->
+  <!-- MAIN HOMEPAGE CONTENT -->
   <main class="main-content">
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-container">
+        
+        <!-- Left Side: Hero Text Card -->
+        <div class="hero-text-card">
+          <span class="hero-badge">
+            <span class="badge-dot">●</span> DROP 001 AVAILABLE NOW
+          </span>
+
+          <h1 class="hero-title">Y2K STREETWEAR ARCHIVE</h1>
+          
+          <p class="hero-subtitle">
+            Minimalist Y2K webcore aesthetic. Engineered with heavyweight fabrics, raw hem finishes & boxy cyber silhouettes built for the matrix.
+          </p>
+
+          <div class="hero-actions">
+            <a href="shop.html" class="btn btn-primary">EXPLORE DROP 001 →</a>
+            <a href="lookbook.html" class="btn btn-secondary">VIEW LOOKBOOK</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <span class="meta-label">COLLECTION</span>
+              <span class="meta-val">SEASON 00</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">ORIGIN</span>
+              <span class="meta-val">TOKYO / NYC</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">STATUS</span>
+              <span class="meta-val">IN STOCK</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Hero Campaign Image Window -->
+        <div class="hero-image-card">
+          <div class="window-header">
+            <span class="window-title">phenom_campaign_preview.raw</span>
+            <div class="window-controls">
+              <span>_</span>
+              <span>□</span>
+              <span>✕</span>
+            </div>
+          </div>
+          <div class="hero-image-wrapper">
+            <img src="images/hero.jpg" alt="PHENOM Y2K Streetwear Campaign" class="hero-img">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. MARQUEE TICKER BANNER -->
+    <section class="marquee-section">
+      <div class="marquee-content">
+        <span class="marquee-item">WORLDWIDE SHIPPING <span class="marquee-star">✱</span></span>
+        <span class="marquee-item">LIMITED QUANTITIES <span class="marquee-star">✱</span></span>
+        <span class="marquee-item">DROP 001 LIVE <span class="marquee-star">✱</span></span>
+        <span class="marquee-item">CYBER WEBCORE ARCHIVE <span class="marquee-star">✱</span></span>
+        <span class="marquee-item">HEAVYWEIGHT COTTON <span class="marquee-star">✱</span></span>
+        <span class="marquee-item">SYSTEM ONLINE <span class="marquee-star">✱</span></span>
+        <!-- Duplicate for continuous scroll loop -->
+        <span class="marquee-item">WORLDWIDE SHIPPING <span class="marquee-star">✱</span></span>
+        <span class="marquee-item">LIMITED QUANTITIES <span class="marquee-star">✱</span></span>
+        <span class="marquee-item">DROP 001 LIVE <span class="marquee-star">✱</span></span>
+        <span class="marquee-item">CYBER WEBCORE ARCHIVE <span class="marquee-star">✱</span></span>
+        <span class="marquee-item">HEAVYWEIGHT COTTON <span class="marquee-star">✱</span></span>
+        <span class="marquee-item">SYSTEM ONLINE <span class="marquee-star">✱</span></span>
+      </div>
+    </section>
+
+    <!-- 3. FEATURED PRODUCTS PREVIEW -->
+    <section class="shop-section">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-tag">[ DROP 001 CAPSULE ]</span>
+          <h2 class="section-title">FEATURED SILHOUETTES</h2>
+          <p class="section-desc">Hover over product cards to view garment specs & add to your collection.</p>
+        </div>
+
+        <div class="product-grid">
+          
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-image-box">
+              <img src="images/product1.jpg" alt="Striped Distressed Knit Sweater" class="product-img">
+              <div class="product-overlay">
+                <span class="overlay-tag">SPECIFICATIONS</span>
+                <p class="overlay-desc">Distressed blue-black knitwear with off-shoulder neckline, silver star pendant accent, and raw Y2K punk finish.</p>
+                <button class="btn btn-primary add-cart-btn">ADD TO CART — $85</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">STRIPED DISTRESSED KNIT</h3>
+              <span class="product-price">$85.00</span>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image-box">
+              <img src="images/product2.jpg" alt="Cyber Guitar Graphic Top" class="product-img">
+              <div class="product-overlay">
+                <span class="overlay-tag">SPECIFICATIONS</span>
+                <p class="overlay-desc">Off-shoulder heather gray top with cyber gothic guitar typography print and layered double straps.</p>
+                <button class="btn btn-primary add-cart-btn">ADD TO CART — $48</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">CYBER GUITAR GRAPHIC TOP</h3>
+              <span class="product-price">$48.00</span>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-image-box">
+              <img src="images/product3.jpg" alt="Low-Rise Flared Denim Jeans" class="product-img">
+              <div class="product-overlay">
+                <span class="overlay-tag">SPECIFICATIONS</span>
+                <p class="overlay-desc">Vintage washed rigid cotton denim with low-rise waist fit, whiskered thighs, and exaggerated flare leg cut.</p>
+                <button class="btn btn-primary add-cart-btn">ADD TO CART — $95</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">LOW-RISE FLARED DENIM</h3>
+              <span class="product-price">$95.00</span>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-image-box">
+              <img src="images/product4.jpg" alt="Cyber Sigil Zip Hoodie" class="product-img">
+              <div class="product-overlay">
+                <span class="overlay-tag">SPECIFICATIONS</span>
+                <p class="overlay-desc">Heavyweight black fleece zip sweater featuring chrome cyber sigil chest artwork and layered stand collar.</p>
+                <button class="btn btn-primary add-cart-btn">ADD TO CART — $110</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">CYBER SIGIL ZIP HOODIE</h3>
+              <span class="product-price">$110.00</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="shop.html" class="btn btn-primary">VIEW FULL DROP 001 CATALOG →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. GARMENT SPECIFICATIONS / BRAND PHILOSOPHY -->
+    <section class="features-section">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-tag">[ ARCHIVE STANDARDS ]</span>
+          <h2 class="section-title">GARMENT ARCHITECTURE</h2>
+          <p class="section-desc">Every piece is engineered to capture late 90s cyber webcore subculture.</p>
+        </div>
+
+        <div class="features-grid">
+          
+          <div class="feature-card">
+            <span class="feature-num">01 // FABRIC</span>
+            <h3 class="feature-title">HEAVYWEIGHT KNITS</h3>
+            <p class="feature-desc">Crafted from 450GSM combed cotton and distressed acrylic knits for structure, durability, and raw edge drape.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-num">02 // SILHOUETTE</span>
+            <h3 class="feature-title">BOXY CYBER CUT</h3>
+            <p class="feature-desc">Proportion-focused tailoring with dropped shoulder seams, flared leg openings, and Y2K relaxed silhouettes.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-num">03 // DETAILS</span>
+            <h3 class="feature-title">HARDWARE ACCENTS</h3>
+            <p class="feature-desc">Custom silver star charms, chrome sigil embroidery, whiskered denim washes, and webcore tab labeling.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. LOOKBOOK EDITORIAL PREVIEW -->
+    <section class="lookbook-section" style="padding-top: 0;">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-tag">[ CAMPAIGN GALLERY ]</span>
+          <h2 class="section-title">EDITORIAL STILLS</h2>
+          <p class="section-desc">Visual documentation from our Tokyo street archive campaign.</p>
+        </div>
+
+        <div class="lookbook-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+          
+          <div class="lookbook-card">
+            <div class="lookbook-image-box">
+              <img src="images/lookbook1.jpg" alt="Look 01 Star Cargo" class="lookbook-img">
+            </div>
+            <div class="lookbook-meta">
+              <span class="look-title">LOOK 01 // STAR CARGO</span>
+              <span class="look-tag">STREET ARCHIVE</span>
+            </div>
+          </div>
+
+          <div class="lookbook-card">
+            <div class="lookbook-image-box">
+              <img src="images/lookbook2.jpg" alt="Look 02 Metro Drift" class="lookbook-img">
+            </div>
+            <div class="lookbook-meta">
+              <span class="look-title">LOOK 02 // METRO DRIFT</span>
+              <span class="look-tag">URBAN FIT</span>
+            </div>
+          </div>
+
+          <div class="lookbook-card">
+            <div class="lookbook-image-box">
+              <img src="images/lookbook3.jpg" alt="Look 03 Star Halter" class="lookbook-img">
+            </div>
+            <div class="lookbook-meta">
+              <span class="look-title">LOOK 03 // STAR HALTER</span>
+              <span class="look-tag">Y2K LAYER</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="lookbook.html" class="btn btn-secondary">EXPLORE ALL 9 LOOKBOOK STILLS →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. MEMBER VIP ACCESS TERMINAL -->
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+        <div class="newsletter-card">
+          
+          <div class="window-header">
+            <span class="window-title">phenom_vip_access.exe</span>
+            <div class="window-controls">
+              <span>_</span>
+              <span>□</span>
+              <span>✕</span>
+            </div>
+          </div>
+
+          <div class="newsletter-body">
+            <span class="section-tag">[ EARLY ACCESS TRANSMISSION ]</span>
+            <h2 class="form-title">JOIN THE PHENOM VIP ARCHIVE</h2>
+            <p class="form-subtitle" style="max-width: 460px;">
+              Get instant notification codes for secret password drops, private Discord access, and early checkout clearance.
+            </p>
+
+            <form action="#" class="newsletter-form" onsubmit="event.preventDefault(); alert('Transmission Received! You are now on the VIP early access list.');">
+              <input type="email" class="form-input newsletter-input" placeholder="enter your email..." required>
+              <button type="submit" class="btn btn-primary" style="white-space: nowrap;">TRANSMIT →</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- FOOTER -->
