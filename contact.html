@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- 
+  =============================================================================
+  PHENOM - Contact Page (contact.html)
+  =============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHENOM | Contact</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <nav class="navbar">
+      
+      <a href="index.html" class="brand-logo">
+        <span class="logo-symbol">✱</span> PHENOM <span class="logo-sub">[00]</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-item">HOME</a></li>
+        <li><a href="signin.html" class="nav-item">SIGN IN</a></li>
+        <li><a href="shop.html" class="nav-item">SHOP</a></li>
+        <li><a href="lookbook.html" class="nav-item">LOOKBOOK</a></li>
+        <li><a href="contact.html" class="nav-item active">CONTACT</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="shop.html" class="cart-badge">CART (0)</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- CONTACT PAGE CONTENT -->
+  <main class="main-content">
+    
+    <section class="contact-section">
+      <div class="contact-container">
+        
+        <div class="contact-card">
+          <div class="window-header">
+            <span class="window-title">phenom_contact_v1.exe</span>
+            <div class="window-controls">
+              <span>_</span>
+              <span>□</span>
+              <span>✕</span>
+            </div>
+          </div>
+
+          <div class="contact-content">
+            
+            <!-- Left Info Panel -->
+            <div class="contact-info-panel">
+              <div class="info-header">
+                <span class="section-tag">[ DIRECT TRANSMISSION ]</span>
+                <h2 class="contact-title">GET IN TOUCH</h2>
+                <p class="contact-desc">Inquiries regarding orders, press drops, or wholesale collaborations.</p>
+              </div>
+
+              <div class="contact-details">
+                <div class="detail-item">
+                  <span class="detail-label">HEADQUARTERS</span>
+                  <span class="detail-val">TOKYO / NEW YORK</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">EMAIL TRANSMISSION</span>
+                  <span class="detail-val">SUPPORT@PHENOM.CLUB</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">COMMUNITY DISCORD</span>
+                  <span class="detail-val">DISCORD.GG/PHENOM</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">AVG RESPONSE TIME</span>
+                  <span class="detail-val">&lt; 24 HOURS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Contact Form -->
+            <div class="contact-form-panel">
+              <form action="#" class="contact-form" onsubmit="event.preventDefault();">
+                
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">YOUR NAME</label>
+                  <input type="text" id="contact-name" class="form-input" placeholder="e.g. Kai Vance" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">EMAIL ADDRESS</label>
+                  <input type="email" id="contact-email" class="form-input" placeholder="kai@domain.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">INQUIRY TYPE</label>
+                  <select id="contact-subject" class="form-input">
+                    <option value="order">ORDER STATUS & TRACKING</option>
+                    <option value="sizing">SIZING & GARMENT CARE</option>
+                    <option value="press">PRESS & MEDIA INQUIRY</option>
+                    <option value="other">GENERAL TRANSMISSION</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">MESSAGE</label>
+                  <textarea id="contact-message" class="form-input form-textarea" rows="4" placeholder="Write your transmission here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit-btn">TRANSMIT MESSAGE →</button>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <div class="footer-brand">
+        <span class="brand-logo">
+          <span class="logo-symbol">✱</span> PHENOM <span class="logo-sub">[00]</span>
+        </span>
+        <p class="footer-tagline">Minimalist Y2K webcore streetwear. Engineered with heavy fabrics & soft neutral tones.</p>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <span class="col-title">NAVIGATION</span>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="shop.html">SHOP DROPS</a></li>
+            <li><a href="lookbook.html">LOOKBOOK</a></li>
+            <li><a href="signin.html">MEMBER ACCESS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="col-title">COMMUNITY</span>
+          <ul>
+            <li><a href="#">DISCORD VIP</a></li>
+            <li><a href="#">INSTAGRAM</a></li>
+            <li><a href="#">TIKTOK ARCHIVE</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="col-title">INFO & LEGAL</span>
+          <ul>
+            <li><a href="#">TERMS OF DROP</a></li>
+            <li><a href="#">SHIPPING & RETURNS</a></li>
+            <li><a href="#">SYSTEM: ONLINE</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2000-2026 PHENOM STREETWEAR. ALL RIGHTS RESERVED.</span>
+      <span>HTML & CSS ONLY // PURE Y2K WEBCORE</span>
+    </div>
+  </footer>
+
+</body>
+</html>
